@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     tools:context=".MainActivity">
 
     <Button
@@ -28,17 +29,19 @@
         android:text="TextView"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/buttonShow"
-        tools:layout_editor_absoluteX="157dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonShow" />
 
     <TextView
         android:id="@+id/textViewAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
         android:layout_marginTop="150dp"
         android:text="TextView"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/buttonShow"
-        tools:layout_editor_absoluteX="164dp" />
+        app:layout_constraintStart_toStartOf="@+id/textViewName"
+        app:layout_constraintTop_toBottomOf="@+id/buttonShow" />
 </androidx.constraintlayout.widget.ConstraintLayout>
