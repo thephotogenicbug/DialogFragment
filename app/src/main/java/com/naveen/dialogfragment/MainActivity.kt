@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity() {
             val fragmentManager : FragmentManager = supportFragmentManager
             val myDialogFragment = MyDialogFragment()
 
+            myDialogFragment.isCancelable = false
+
             myDialogFragment.show(fragmentManager, "MyDialogFragment")
         }
 
